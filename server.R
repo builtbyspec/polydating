@@ -24,6 +24,8 @@ shinyServer(
       
       match$name_class[which(matrix[[input$selectedprof]] == sorted[1])]
       
+      match[('helpful':'clear')]
+      
       
       to_print <<- 
         unlist(list(    cat(paste(matrix$name_class[which(matrix[[input$selectedprof]] == sorted[1])], " Polyrating: ", match$agg_rating[which(matrix[[input$selectedprof]] == sorted[1])], "\n"),
